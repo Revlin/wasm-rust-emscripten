@@ -1,0 +1,19 @@
+[package]
+name = "bindgenhello"
+version = "0.1.0"
+authors = ["John <john@real-currents.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = [ "cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.69"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+    "console"
+]
